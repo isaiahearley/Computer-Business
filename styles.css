@@ -1,0 +1,82 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand, sans-serif;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+}
+
+header { 
+    height: 200vh;
+}
+
+.donate {
+    background-color: rgb(218, 195, 166);
+    text-align: center;
+    padding: 0.5% 0%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    right: 0;
+    color: white;
+    padding: 1% 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(1px);
+    margin: 5px 10px;
+}
+
+.section:hover {
+    background-color: rgb(19, 19, 26);
+    transition: 0.3s;
+}
+
+.card {
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.align-right { 
+    text-align: right;
+}
+
+nav {
+    margin: 0.3% 0%;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0% 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-hero-img {
+    background-color: rgb(88, 172, 39);
+    height: 100vh;
+}
+
+footer {
+    background-color: black;
+    height: 25vh;
+}
+
