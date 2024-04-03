@@ -6,34 +6,55 @@
 }
 
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(114, 156, 90);
 }
 
 header { 
-    height: 200vh;
+    height: 100vh;
+}
+
+.nodecor {
+    text-decoration: none;
+    color: black;
 }
 
 .donate {
     background-color: rgb(218, 195, 166);
     text-align: center;
     padding: 0.5% 0%;
+    display: flex;
+}
+
+.donate-card {
+    flex-basis: 10%;
+}
+
+.donate-card-long {
+    flex-basis: 79%;
+}
+
+.close-ad {
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
 }
 
 .underline {
     text-decoration: underline;
 }
 
-.section {
+.nav-section {
     display: flex;
     right: 0;
     color: white;
     padding: 1% 40px;
     border-radius: 15px;
     backdrop-filter: blur(1px);
-    margin: 5px 10px;
+    margin: 20px 10px;
+    transition: 0.15s;
 }
 
-.section:hover {
+.nav-section:hover {
     background-color: rgb(19, 19, 26);
     transition: 0.3s;
 }
@@ -47,32 +68,121 @@ header {
     text-align: right;
 }
 
-nav {
-    margin: 0.3% 0%;
-}
-
 nav ul {
     display: inline-flex;
     list-style-type: none;
 }
 
 nav ul li {
-    padding: 0% 10px;
+    padding: 2% 10px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 800;
+    padding: 8% 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: rgb(73, 73, 73);
 }
 
 .main-hero-img {
-    background-color: rgb(88, 172, 39);
+    background-color: rgb(114, 156, 90);
     height: 100vh;
+}
+
+.main-hero-video {
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.prebuilt-section {
+    font-size: 2em;
+    border-radius: 15px;
+    height: 100vh;
+    padding: 1%;
+    background-color: rgb(27, 27, 27);
+    color: rgb(226, 226, 226);
+    margin: 0% 10px;
+}
+
+.pc-section {
+    height: 90vh;
+    border-radius: 15px;
+    display: flex;
+}
+
+.pc-card {
+    flex-basis: 33%;
+    max-width: 700px;
+    height: 80vh;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px black;
+    margin: 3% 2%;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.pc-card:hover {
+    box-shadow: 10px 10px black;
+    transition: 0.5s;
+}
+
+.tier-decor-one {
+    background-color: rgb(207, 165, 74);
+}
+
+.tier-decor-two {
+    background-color: rgb(209, 88, 88);
+}
+
+.tier-decor-three {
+    background-color: rgb(18, 18, 85);
+}
+
+.tier-decor {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.configure {
+    position: relative;
+    bottom: 0%;
+    margin: 0% 30%;
+    padding: 1% 0%;
+    border-radius: 15px;
+    background-color: rgb(243, 240, 240);
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.configure:hover {
+    margin: 0% 29%;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.specs {
+    text-align: center;
+    font-size: 0.75em;
+    margin: 2% 15%; 
+}
+
+.specs ul li {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 0% 10%;
+    
 }
 
 footer {
