@@ -1,0 +1,92 @@
+.tier-section {
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    height: 150vh;
+    margin: 0% 1%;
+    display: flex;
+}
+
+.tier-left-section { 
+    flex-direction: column;
+}
+
+.specs-option {
+    background-color: rgba(65, 65, 65, 0.288);
+    height: 125vh;
+    width: 100%;
+    margin: 1%;
+    border-radius: 15px;
+}
+
+.pc-hero-img {
+    background-color: rgb(128, 127, 127);
+    margin: 3% 1% 0% 4%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50vh;
+    text-align: center;
+    font-size: 5em;
+}
+
+.pc-price {
+    background-color: rgba(55, 255, 15, 0.288);
+    height: 6.5vh;
+    margin: 0% 1% 0% 4%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-size: 3em;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 2%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid white;
+}
+
+td {
+    font-size: 2em;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 435px;
+    text-align: left;
+    padding: 1% 0%;
+    text-wrap: balance;
+
+}
+
+.parts {
+    text-align: right;
+}
+
+.ryzen-color {
+    color: rgb(228, 91, 37);
+    text-decoration: none;
+}
+
+.nvidia-color {
+    color: rgb(6, 100, 6);
+    text-decoration: none;
+}
+
+.specs-table {
+    margin: 1% 2%;
+}
+
+.disclaimer {
+    color: rgb(122, 122, 247);
+    font-size: 1.1em;
+}
+
+img {
+    object-fit: fill;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}

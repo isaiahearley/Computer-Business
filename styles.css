@@ -10,7 +10,7 @@ body {
 }
 
 header { 
-    height: 100vh;
+    height: 30vh;
 }
 
 .nodecor {
@@ -173,7 +173,7 @@ nav ul li a:hover {
     flex-basis: 33%;
     max-width: 700px;
     height: 80vh;
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     box-shadow: 5px 5px black;
     margin: 3% 2%;
     border-radius: 15px;
