@@ -15,7 +15,7 @@ header {
 
 .nodecor {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .donate {
@@ -57,6 +57,29 @@ header {
 .nav-section:hover {
     background-color: rgb(19, 19, 26);
     transition: 0.3s;
+}
+
+.location-section {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1%;
+    max-width: 100%;
+    margin: 0% 0.8%;
+    display: inline-flex;
+}
+
+.location-information {
+    color: rgb(143, 143, 143);
+    margin: 0% 5px;
+    text-decoration: none;
+}
+
+.location-current {
+    text-decoration: none;
+    text-decoration: underline;
+    color: rgb(226, 226, 226);
+    margin: 0% 5px;
+
 }
 
 .card {
@@ -108,12 +131,37 @@ nav ul li a:hover {
 .prebuilt-section {
     font-size: 2em;
     border-radius: 15px;
-    height: 100vh;
+    height: 110vh;
     padding: 1%;
     background-color: rgb(27, 27, 27);
     color: rgb(226, 226, 226);
     margin: 0% 10px;
 }
+
+.inventory-section {
+    margin: 0% 3%;
+    text-align: right;
+}
+
+.inventory-button {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 0.8em;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+    background-size: 200% 100%;
+    transition: 0.3s;
+}
+
+.inventory-button:hover {
+    color: black;
+    transition: 0.3s;
+    background-position: left;
+}
+
+
 
 .pc-section {
     height: 90vh;
@@ -138,6 +186,10 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+.pricing-section:hover {
+    background-color: red;
+}
+
 .tier-decor-one {
     background-color: rgb(207, 165, 74);
 }
@@ -155,27 +207,50 @@ nav ul li a:hover {
     border-top-right-radius: 15px;
 }
 
+.catch-slogan {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 1% 3%;
+}
+
+.pricing-section {
+    display: inline-flex;
+    background-color: rgb(68, 68, 68);
+    padding: 1%;
+    width: 98%;
+    justify-content: space-between;
+}
+
+.pricing-text {
+    font-size: 0.8em;
+    margin-top: 1%;
+}
+
 .configure {
     position: relative;
     bottom: 0%;
-    margin: 0% 30%;
-    padding: 1% 0%;
-    border-radius: 15px;
-    background-color: rgb(243, 240, 240);
-    font-size: 1em;
+    margin: 0% 1%;
+    padding: 2% 1%;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 0.8em;
     transition: 0.3s;
+    font-weight: 300;
 }
 
 .configure:hover {
-    margin: 0% 29%;
-    font-size: 1.1em;
-    transition: 0.3s;
+    font-size: 0.85em;
 }
+
+.configure:hover + .nodecor {
+    color: black;
+}
+
 
 .specs {
     text-align: center;
     font-size: 0.75em;
-    margin: 2% 15%; 
+    margin: 2% 13%; 
 }
 
 .specs ul li {
@@ -188,5 +263,6 @@ nav ul li a:hover {
 footer {
     background-color: black;
     height: 25vh;
+    margin-top: 10px;
 }
 
