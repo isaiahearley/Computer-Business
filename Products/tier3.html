@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+    <script src="../JS/expandconfiguration.js"></script>
+    <script src="../JS/tier3cost.js"></script>
     <title>Tier: 3 | Gaming PC | SDCD</title>
 </head>
 <body>
@@ -52,21 +53,26 @@
 
 
                 <div class="pc-hero-img">
-                    <img class="test" src="../Assets/Images/computert3.jpg"> 
+                    <img src="../Assets/Images/h5 nzxt case.jpg"> 
                 </div>
                 <div class="pc-price">
-                    <p>Total:</p>
+                    <p>Base Price:</p>
                     <p class="right-align">$1149</p>
                 </div>
                 
                 <div class="specs-table">
                     <table>
                         <tr>
+                            <td>Specification Sheet</td>
                             <td class="disclaimer"> &#x2022; Wi-Fi and Bluetooth Compatible</td>
                         </tr>
                         <tr>
                             <td>Processor</td>
                             <td class="parts"><a class="ryzen-color" href="https://www.amd.com/en/products/processors/desktops/ryzen.html#specifications" target="_blank">AMD Ryzen 7600</a></td>
+                        </tr>
+                        <tr>
+                            <td>CPU Cooler</td>
+                            <td class="parts">Thermalright 120 SE Air Cooler</td>
                         </tr>
                         <tr>
                             <td>Graphics Card</td>
@@ -78,9 +84,20 @@
                         </tr>
                         <tr>
                             <td>Storage</td>
-                            <td class="parts">500GBs NVMe 2 TBs HDD</td>
+                            <td class="parts">500GBs NVMe, 2 TBs HDD</td>
                         </tr>
-
+                        <tr>
+                            <td>Case</td>
+                            <td class="parts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NZXT H5 Flow 
+                                <span class="dimensions">
+                                    <ul>
+                                        <li>Height 18.2 inches</li>
+                                        <li>Width 8.9 inches</li>
+                                        <li>Length 17.5 inches</li>
+                                    </ul>
+                                </span>
+                            </td>
+                        </tr>
                     </table>
                 </div>
 
@@ -89,15 +106,162 @@
 
 
             <div class="specs-option">
-                <span class="checkbox"></span>
+
+                <section class="add-on-container">
+
+                    <p>Operating Systems</p>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="129" name="WINDOWS11CHECKBOX" id="WINDOWS11">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Windows 11 Home</p>
+                        <p class="format-price">$129</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="199" name="WINDOWS11PROCHECKBOX" id="WINDOWS11PRO">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Windows 11 Pro</p>
+                        <p class="format-price">$199</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="0" name="LINUXCHECKBOX" id="LINUX">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Linux</p>
+                        <p class="format-price">$0</p>
+                    </label>
+
+                    <p class="warning"> &#x2022; Not selecting an OS is $0.**</p>
+
+                </section>
+
+                <section class="add-on-container">
+
+                    <p>Lighting</p>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="50" name="RGBADDONCHECKBOX" id="RGBADDON">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;RGB Strip add-on</p>
+                        <p class="format-price">$50</p>
+                    </label>
+
+                </section>
+
+                <section class="add-on-container">
+
+                    <p>Peripherals</p>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="80" name="HYPERXHEADPHONECHECKBOX" id="HYPERHEADPHONXADDON">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Hyper X Cloud II Headset</p>
+                        <p class="format-price">$80</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="40" name="CORSAIRHARPOONCHECKBOX" id="CORSAIRHARPOONADDON">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Corsair Harpoon Mouse</p>
+                        <p class="format-price">$40</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="55" name="KEYCHRONC1CHECKBOX" id="KEYCHRONC1ADDON">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Keychron C1 Pro Keyboard</p>
+                        <p class="format-price">$55</p>
+                    </label>
+
+                </section>
+
+                
+                <section class="add-on-container">
+
+                    <p>Already have your own parts?</p>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="-210" name="HOMECONFIGURAIONCHECKBOX" id="HOMECONFIGURAION">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Motherboard</p>
+                        <p class="format-price">-$210</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="-200" name="HOMECONFIGURAIONCHECKBOX" id="HOMECONFIGURAION">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Processor</p>
+                        <p class="format-price">-$200</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="-320" name="HOMECONFIGURAIONCHECKBOX" id="HOMECONFIGURAION">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Graphics Card</p>
+                        <p class="format-price">-$320</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="-80" name="HOMECONFIGURAIONCHECKBOX" id="HOMECONFIGURAION">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Memory</p>
+                        <p class="format-price">-$80</p>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <input class="checkbox-tiers" type="checkbox" value="-140" name="HOMECONFIGURAIONCHECKBOX" id="HOMECONFIGURAION">
+                        <span class="checkmark"></span>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Storage (HDD / SSD)</p>
+                        <p class="format-price">-$140</p>
+                    </label>
+
+                    
+
+                </section>
 
             </div>
 
 
+        </section>
 
 
+        <section class="configuration-checklist">
+
+            <div class="test">
+
+                <div class="expand-configuration">
+                    <h1 class="arrow-animation"> ↖ </h1>
+                    <h1 class="hidden close-animation">X</h1>
+                </div>
+
+                <div class="total-price">
+                    <h1>Est. Cost: $<span id="total">1149</span></h1>
+                </div>
+
+                <a href="" class="purchase-button">
+                    <h1>Purchase</h1>
+                </a>
+
+                <section class="hidden configuration-confirmation">
 
 
+                    <div class="receipt-flex">
+                        <div class="total-price-two">
+                            <h1>Estimated Cost: $<span id="total2">1149</span></h1>
+                        </div>
+
+                        <a href="" class="purchase-button-two">
+                            <h1>Purchase</h1>
+                        </a>
+                    </div>
+
+                </section>
+
+                
+            </div>
+
+           
 
         </section>
 
