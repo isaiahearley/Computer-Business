@@ -271,6 +271,7 @@ img {
     padding: 1% 1% 0%;
     height: 5vh;
     border-radius: 5px;
+    border: 2px solid black;
 }
 
 .purchase-button {
@@ -316,9 +317,10 @@ img {
     margin-right: auto;
     margin-left: 3%;
     background-color: rgb(109, 194, 109);
-    padding: 1% 17% 0%;
+    padding: 1% 13% 0%;
     height: 5vh;
     border-radius: 5px;
+    border: 2px solid black;
 }
 
 .configuration-confirmation {
@@ -338,11 +340,17 @@ img {
 
 .receipt-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 10vh;
+    margin-top: auto;
+    margin-bottom: 1%;
 }
 
 .hidden {
     display: none;
+}
+
+.expand-fontsize {
+    font-size: 1.5em;
 }
