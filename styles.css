@@ -4,18 +4,22 @@
     margin: 0;
     font-family: Quicksand, sans-serif;
 }
-
+/* rgb(114, 156, 90); */
 body {
-    background-color: rgb(114, 156, 90);
+    background-color: rgb(114, 156, 90);;
 }
 
-header { 
-    height: 30vh;
+main { 
+    z-index: 1;
 }
 
-.nodecor {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.timeframe {
+    background-color: rgb(6, 6, 112);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 0.5em;
+    text-align: center;
+    padding: 1% 0%;
 }
 
 .donate {
@@ -49,7 +53,7 @@ header {
     color: white;
     padding: 1% 40px;
     border-radius: 15px;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(3px);
     margin: 20px 10px;
     transition: 0.15s;
 }
@@ -57,29 +61,6 @@ header {
 .nav-section:hover {
     background-color: rgb(19, 19, 26);
     transition: 0.3s;
-}
-
-.location-section {
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 1%;
-    max-width: 100%;
-    margin: 0% 0.8%;
-    display: inline-flex;
-}
-
-.location-information {
-    color: rgb(143, 143, 143);
-    margin: 0% 5px;
-    text-decoration: none;
-}
-
-.location-current {
-    text-decoration: none;
-    text-decoration: underline;
-    color: rgb(226, 226, 226);
-    margin: 0% 5px;
-
 }
 
 .card {
@@ -115,13 +96,15 @@ nav ul li a:hover {
 
 .main-hero-img {
     background-color: rgb(114, 156, 90);
-    height: 100vh;
+    height: 90vh;
 }
 
 .main-hero-video {
-    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
     background-color: rgb(27, 27, 27);
-    border-radius: 15px;
+    object-fit: cover;
 }
 
 .section-header {
@@ -129,7 +112,9 @@ nav ul li a:hover {
 }
 
 .prebuilt-section {
+    position: relative;
     font-size: 2em;
+    z-index: 1;
     border-radius: 15px;
     height: 110vh;
     padding: 1%;
@@ -218,7 +203,7 @@ nav ul li a:hover {
     background-color: rgb(68, 68, 68);
     padding: 1%;
     width: 98%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .pricing-text {
@@ -230,22 +215,24 @@ nav ul li a:hover {
     position: relative;
     bottom: 0%;
     margin: 0% 1%;
-    padding: 2% 1%;
+    padding: 1% 1%;
     border-radius: 8px;
     border: 1px solid white;
     font-size: 0.8em;
     transition: 0.3s;
     font-weight: 300;
+    text-decoration: none;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+    background-size: 200% 100%;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 .configure:hover {
-    font-size: 0.85em;
-}
-
-.configure:hover + .nodecor {
+    background-position: left;
     color: black;
+    transition: 0.3s;
 }
-
 
 .specs {
     text-align: center;
@@ -260,8 +247,60 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: black;
-    height: 25vh;
+    position: relative;
     margin-top: 10px;
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+.footer-group {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    justify-content: space-around;
+}
+
+.footer-section {
+    border-top: 1px solid white;
+    padding: 10px 0%;
+}
+
+.align-vertical {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex-basis: 20%;
+}
+
+.align-vertical p:hover {
+    color: black;
+}
+
+.lower-footer {
+    background-color: rgb(170, 170, 170);
+    height: 4vh;
+    position: relative;
+    color: black;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+.social-media {
+    margin: 0% 0% 0% 67%;
+    padding: 1%;
+    color: rgb(173, 131, 38);
+    display: flex;
+}
+
+.social-media p {
+    margin: 0% 2%;
+}
+
+
+
+.copyright {
+    font-size: 0.8em;
+}

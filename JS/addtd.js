@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let total2 = 1149;
 
         // Clear existing TDs before updating
-
         while (table.rows.length > 2) {
             table.deleteRow(2);
         }
@@ -42,4 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('change', updateTotal);
     });
+
+    // Call updateTotal function when the page loads
+    updateTotal();
 });
