@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update total based on checked checkboxes
     function updateTotal() {
+        
+        //should be variable, that passes data from html to js, change in the future
         let total = 1169;
         let total2 = 1169;
 

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to update total based on checked checkboxes with counting animation
     function updateTotal() {
-      let targetTotal = 1149; // Starting total value
+      let targetTotal = 1169; // Starting total value
       let currentTotal = parseInt(totalDisplay.textContent);
       
       checkboxes.forEach(function(checkbox) {
