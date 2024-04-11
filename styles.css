@@ -13,13 +13,21 @@ main {
     z-index: 1;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .timeframe {
-    background-color: rgb(6, 6, 112);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 0.5em;
-    text-align: center;
-    padding: 1% 0%;
+    background-color: rgb(21, 21, 209);
+    border-radius: 15px;
+    font-size: 1vw;
+    text-align: left;
+    margin: 3% 5%;
+    padding: 3% 2%;
+}
+
+.estimated-shipping-decor {
+    color: rgb(192, 192, 192);
 }
 
 .donate {
@@ -94,9 +102,13 @@ nav ul li a:hover {
     background-color: rgb(73, 73, 73);
 }
 
+.current-page-anchor {
+    background-color: rgb(114, 156, 90);
+}
+
 .main-hero-img {
     background-color: rgb(114, 156, 90);
-    height: 90vh;
+    height: 40vh;
 }
 
 .main-hero-video {
@@ -105,26 +117,66 @@ nav ul li a:hover {
     height: 100vh;
     background-color: rgb(27, 27, 27);
     object-fit: cover;
+    filter:brightness(0.5)
 }
 
 .section-header {
     text-align: center;
 }
 
+.company-container {
+    position: relative;
+    margin: 0% 35% 10% 20%;
+}
+
+.company-description-header {
+    color: rgb(129, 206, 74);
+    font-family: "Anton", sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.company-description-header:hover {
+    color: rgb(255, 255, 255);
+    font-family: "Anton", sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.company-container p {
+    color: white;
+    font-size: 1.1em;
+    margin-top: 2%;
+}
+
+.questionaire {
+    text-decoration: underline;
+    color: rgb(129, 206, 74);
+}
+
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(73, 73, 73);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: auto;    
+}
+
 .prebuilt-section {
     position: relative;
     font-size: 2em;
     z-index: 1;
-    border-radius: 15px;
-    height: 110vh;
+    height: 150vh;
     padding: 1%;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(110, 110, 110);
     color: rgb(226, 226, 226);
-    margin: 0% 10px;
 }
 
 .inventory-section {
-    margin: 0% 3%;
+    position: relative;
+    margin: 5% 3%;
     text-align: right;
 }
 
@@ -137,6 +189,7 @@ nav ul li a:hover {
     font-size: 0.8em;
     background: linear-gradient(to left, rgba(255, 0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
     background-size: 200% 100%;
+    margin-top: 10%;
     transition: 0.3s;
 }
 
@@ -146,10 +199,7 @@ nav ul li a:hover {
     background-position: left;
 }
 
-
-
 .pc-section {
-    height: 90vh;
     border-radius: 15px;
     display: flex;
 }
@@ -157,10 +207,10 @@ nav ul li a:hover {
 .pc-card {
     flex-basis: 33%;
     max-width: 700px;
-    height: 80vh;
+    height: 70;
     border: 3px solid rgb(0, 0, 0);
     box-shadow: 5px 5px black;
-    margin: 3% 2%;
+    margin: 3% 2% 0% 2%;
     border-radius: 15px;
     text-align: center;
     transition: 0.5s;
@@ -169,10 +219,6 @@ nav ul li a:hover {
 .pc-card:hover {
     box-shadow: 10px 10px black;
     transition: 0.5s;
-}
-
-.pricing-section:hover {
-    background-color: red;
 }
 
 .tier-decor-one {
@@ -188,63 +234,136 @@ nav ul li a:hover {
 }
 
 .tier-decor {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .catch-slogan {
-    font-size: 0.8em;
+    position: relative;
+    font-size: 2vw;
     text-align: left;
     margin: 1% 3%;
 }
 
+.picture-area {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.357);
+    height: 40vh;
+    margin: 0% 4%;
+    border-radius: 15px;
+}
+
 .pricing-section {
-    display: inline-flex;
-    background-color: rgb(68, 68, 68);
+    display: flex;
     padding: 1%;
     width: 98%;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
 .pricing-text {
-    font-size: 0.8em;
+    font-size: 2vw;
     margin-top: 1%;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
 }
 
 .configure {
-    position: relative;
-    bottom: 0%;
-    margin: 0% 1%;
-    padding: 1% 1%;
-    border-radius: 8px;
-    border: 1px solid white;
-    font-size: 0.8em;
+    position: relative;    
+    margin: 2% 1%;
+    padding: 2% 5%;
+    border-radius: 4px;
+    background-color: rgb(61, 171, 244);
+    font-size: 1.4vw;
     transition: 0.3s;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
-    background: linear-gradient(to left, rgba(255, 0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
-    background-size: 200% 100%;
+    /*background: linear-gradient(to left, rgba(255, 0, 0, 0) 50%, rgb(255, 255, 255) 50%) right;
+    background-size: 200% 100%;*/
     color: rgb(255, 255, 255);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .configure:hover {
-    background-position: left;
-    color: black;
-    transition: 0.3s;
+    /*background-position: left;*/
+    background-color: rgb(11, 147, 237);
+    box-shadow: 0px 0px 1px black;
+    transition: 0.1s;
 }
 
 .specs {
     text-align: center;
-    font-size: 0.75em;
-    margin: 2% 13%; 
+    font-size: 1.5vw;
+    margin: 2% 2%; 
 }
 
 .specs ul li {
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-align: left;
-    margin: 0% 10%;
+    margin: 1% 4%;
+    list-style-type: none;
 }
+
+.models-details {
+    position: relative;
+    background-color: rgb(94, 94, 94);
+    margin: 1% 3%;
+    height: 130vh;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding-left: 3%;
+
+}
+
+.cubes {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 90%;
+    width: 47%;
+    margin: 2% 0%;
+    gap: 3%;
+    justify-content: space-around;
+}
+
+.cubes h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 2vw;
+}
+
+.cubes h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 1.6vw;
+    margin: 0% 3%;
+}
+
+.cubes p {
+    font-size: 1.3vw;
+}
+
+.cube-text-section {
+    margin: 1% 4%;
+}
+
+.cubes-highlight {
+    background-color: rgba(117, 117, 117, 0.637);
+}
+
+.cube {
+    background-color: rgba(117, 117, 117, 0.547);
+    height: 80%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+/* Footer Stuff */
+
 
 footer {
     position: relative;
@@ -263,8 +382,12 @@ footer {
     justify-content: space-around;
 }
 
+.footer-title {
+    font-size: 0.8em;
+    color: grey;
+}
+
 .footer-section {
-    border-top: 1px solid white;
     padding: 10px 0%;
 }
 
@@ -293,13 +416,26 @@ footer {
     padding: 1%;
     color: rgb(173, 131, 38);
     display: flex;
+    justify-content: space-evenly;
+}
+
+.social-box {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 5px;
 }
 
 .social-media p {
-    margin: 0% 2%;
+    margin: 1% 2%;
 }
 
-
+.social-img {
+    margin: 15% 15%;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
 
 .copyright {
     font-size: 0.8em;

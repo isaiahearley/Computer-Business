@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="./JS/displaydate.js"></script>
+
+
 
     <title>San Diego Custom Desktops</title>
 </head>
@@ -44,7 +50,7 @@
                         <div class="card align-right">
                             <nav>
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a class="current-page-anchor" href="index.html">Home</a></li>
                                     <li><a href="customize.html">Products</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="cart.html">Cart</a></li>
@@ -53,6 +59,18 @@
                         </div>
                     </div>
 
+            </section>
+
+            <section class="company-container">
+                <h1><a href="./about.html" class="company-description-header">We build quality desktops, and troubleshoot issues in-house. Check us out.</a></h1>
+                <p>
+                    We know buying your first desktop online can be daunting. At San Diego Custom Desktops our certified 
+                    professionals cater parts for each of our desktops to give users a long-lasting experience with the performance
+                    you want. 
+                </p>
+                <p>
+                    Not sure what desktop is right for you? Go ahead and answer a few questions from our <a href="./Products/questionaire.html" class="questionaire">custom questionaire.</a> 
+                </p>
             </section>
 
     </header>
@@ -73,27 +91,36 @@
                     </div>
 
                     <div class="catch-slogan">
-                        <p>Thrify deal. Stable performance all around.</p>
+                        <p>Thrify deal. Providing stable performance with a variety of workloads.</p>
+                    </div>
+
+                    <div class="picture-area">
+
                     </div>
 
                     <div class="specs">
-                        <h3>Specifications</h3>
+                        <h3>Parts</h3>
                         <ul>
-                            <li>Processor AMD Ryzen 7600 </li>
-                            <li>Graphics NVIDIA RTX 4060</li>
-                            <li>Memory Corsair 16GB</li>
-                            <li>Storage 2.5 TBs</li>
+                            <li>AMD Ryzen 5 7600 CPU</li>
+                            <li>Geforce RTX 4060 - 8GB</li>
+                            <li>Corsair Vengence 16GB DDR5-5200MHz</li>
+                            <li>500GB M.2 NVMe SSD</li>
+                            <li>2TB 7200 RPM HDD</li>
+                            <li>NZXT H5 Flow Case</li>
                         </ul>
                     </div>
 
-                    
-                    <div class="pricing-section">
-                            <p class="pricing-text">Starting at $1,149</p>
-                            <a class="configure" href="./Products/tier3.html">Configure</a>
-                    </div>
+                    <div class="product-details-container">
+                        <div class="pricing-section">
+                                <p class="pricing-text">Starting at $1,169</p>
+                                <a class="configure" href="./Products/tier3.html">Buy</a>
+                        </div>
 
-                    <div class="timeframe">
-                        <p>Ships within 7-10 days of purchase.</p>
+                        <div class="timeframe">
+                            <p class="bold">Free shipping</p>
+                            <p>Ships within 7-10 days of purchase.</p>
+                            <p class="estimated-shipping-decor">Est. Shipping By: <span class="estimated-shipping-date"></span></p>
+                        </div>
                     </div>
                     
                 </div>
@@ -105,26 +132,36 @@
                     </div>
 
                     <div class="catch-slogan">
-                        <p>The typical middleman. Excellent performance in all titles.</p>
+                        <p>The typical mid-tier desktop. Excellent performance in all titles.</p>
+                    </div>
+
+                    <div class="picture-area">
+
                     </div>
                     
                     <div class="specs">
-                        <h3>Specifications</h3>
+                        <h3>Parts</h3>
                         <ul>
-                            <li>Processor AMD Ryzen 7 7600X </li>
-                            <li>Graphics RTX 4070 </li>
-                            <li>Memory Corsair 32GB </li>
-                            <li>Storage 3 TBs</li>
+                            <li>AMD Ryzen 5 7600X CPU</li>
+                            <li>Geforce RTX 4070 - 12GB</li>
+                            <li>Corsair Vengence 32GB DDR5-5200MHz</li>
+                            <li>1TB M.2 NVMe SSD</li>
+                            <li>2TB 7200 RPM HDD</li>
+                            <li>NZXT H5 Flow Case</li>
                         </ul>
                     </div>
 
-                    <div class="pricing-section">
-                            <p class="pricing-text">Starting at $1,599</p>
-                            <a class="configure" href="./Products/tier2.html">Configure</a>
-                    </div>
+                    <div class="product-details-container">
+                        <div class="pricing-section">
+                                <p class="pricing-text">Starting at $1,599</p>
+                                <a class="configure" href="./Products/tier2.html">Buy</a>
+                        </div>
 
-                    <div class="timeframe">
-                        <p>Ships within 7-10 days of purchase.</p>
+                        <div class="timeframe">
+                            <p class="bold">Free shipping</p>
+                            <p>Ships within 7-10 days of purchase.</p>
+                            <p class="estimated-shipping-decor">Est. Shipping By: <span class="estimated-shipping-date"></span></p>
+                        </div>
                     </div>
 
 
@@ -137,32 +174,86 @@
                     </div>
 
                     <div class="catch-slogan">
-                        <p>Top of the line hardware, breezing through every game.</p>
+                        <p>Top of the line hardware, breezing through games; great for development.</p>
+                    </div>
+
+                    <div class="picture-area">
+
                     </div>
 
                     <div class="specs">
-                        <h3>Specifications</h3>
+                        <h3>Parts</h3>
                         <ul>
-                            <li>Processor AMD Ryzen 7 7800X3D </li>
-                            <li>Graphics RTX 4070 Ti </li>
-                            <li>Memory Corsair 64GB </li>
-                            <li>Storage 4 TBs</li>
+                            <li>AMD Ryzen 7 7800X3D CPU</li>
+                            <li>Geforce RTX 4070 Ti - 16GB</li>
+                            <li>Corsair Vengence 64GB DDR5-5200MHz</li>
+                            <li>2TB M.2 NVMe SSD</li>
+                            <li>2TB 7200 RPM HDD</li>
+                            <li>NZXT H7 Flow Case</li>
                         </ul>
                     </div>
 
-                    <div class="pricing-section">
-                            <p class="pricing-text">Starting at $2,299</p>
-                            <a class="configure" href="./Products/tier1.html">Configure</a>
+
+                    <div class="product-details-container">
+                        <div class="pricing-section">
+                                <p class="pricing-text">Starting at $2,349</p>
+                                <a class="configure" href="./Products/tier1.html">Buy</a>
+                        </div>
+
+                        <div class="timeframe">
+                            <p class="bold">Free Shipping</p>
+                            <p>Ships within 8-10 days of purchase.</p>
+                            <p class="estimated-shipping-decor">Est. Shipping By: <span class="estimated-shipping-date"></span></p>
+                        </div>
                     </div>
 
-                    <div class="timeframe">
-                        <p>Ships within 8-10 days of purchase.</p>
-                    </div>
+                    
 
             </section>
 
+
             <section class="inventory-section">
                 <a class="inventory-button" href="">Current Inventory</a>
+            </section>
+
+        </section>
+
+
+
+
+        <section class="models-details">
+
+            <section class="cubes cubes-highlight">
+                <div class="cube-text-section">
+                    <h2>Why go with our prebuilts?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure delectus qui tempora autem facere repellendus libero cupiditate id laborum perspiciatis, repellat fuga pariatur dolor obcaecati corporis non tenetur consequuntur similique. </p>
+                </div>
+                
+                <div class="cube-text-section">
+                    <h3>Ease</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas obcaecati numquam beatae veritatis doloribus placeat deleniti sit. Ducimus nesciunt ad magni rem suscipit eius recusandae est, assumenda blanditiis corporis. </p>
+                </div>
+                
+                <div class="cube-text-section">
+                    <h3>Quality</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur ducimus iure molestias exercitationem voluptatem quo assumenda, fugiat numquam sit perspiciatis accusamus totam distinctio omnis. Illum voluptates aperiam ab ullam.</p>
+                </div>
+
+                <div class="cube-text-section">
+                    <h3>Affordability</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia assumenda excepturi nemo voluptate? Incidunt ut deleniti libero eveniet, odio aut iste quaerat exercitationem! Maiores ab delectus accusantium labore beatae? Maiores.</p>
+                </div>
+
+            </section>
+
+            <section class="cubes">
+
+                <div class="cube">
+                </div>
+
+                <div class="cube">
+                </div>
+
             </section>
 
         </section>
@@ -215,10 +306,18 @@
 
         <div class="social-media">
             <p>Follow SDCD</p>
-            <p>IG</p>
-            <p>X</p>
-            <p>Facebook</p>
-            <p>LinkedIn</p>
+            <div class="social-box">
+                <img class="social-img" src="./Assets/Images/x-logo-white.png">
+            </div>
+            <div class="social-box">
+                <img class="social-img" src="./Assets/Images/Instagram_Glyph_White.png">
+            </div>
+            <div class="social-box">
+                <img class="social-img" src="./Assets/Images/Facebook_Logo_Secondary.png">
+            </div>
+            <div class="social-box">
+                <img class="social-img" src="./Assets/Images/yt_icon_mono_dark.png">
+            </div>
         </div>
 
         <section class="lower-footer">

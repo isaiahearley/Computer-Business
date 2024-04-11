@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update total based on checked checkboxes
     function updateTotal() {
-        let total = 1149;
-        let total2 = 1149;
+        let total = 1169;
+        let total2 = 1169;
 
         // Clear existing TDs before updating
         while (table.rows.length > 2) {

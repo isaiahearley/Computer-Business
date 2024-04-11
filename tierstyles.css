@@ -18,7 +18,7 @@ background-color: rgb(114, 156, 90);
 
 .specs-option {
     background-color: rgba(65, 65, 65, 0.288);
-    height: 125vh;
+    height: 140vh;
     width: 100%;
     margin: 1%;
     border-radius: 15px;
@@ -215,6 +215,7 @@ img {
     background-color: rgba(252, 252, 252, 0.219);
     border: 3px solid rgb(0, 0, 0);
     position: fixed;
+    z-index: 2;
     bottom: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
