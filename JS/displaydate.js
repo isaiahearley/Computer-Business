@@ -6,6 +6,8 @@ let month = date.getMonth();
 let year = date.getFullYear();
 let leapYear = 0
 
+console.log(month, year);
+
 const months = [  // Array of month names
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
@@ -40,16 +42,10 @@ if(month > 11){
     year++;
 }
 
-// if day is above 30 && month is 1,3,5,7,9,11 then 
-let expecteddate = `${months[month]} ${day}, ${year}`;
-
-
 document.addEventListener("DOMContentLoaded", function() {
     // Your code to set expecteddate and update the element
     let expecteddate = `${months[month]} ${day}, ${year}`;
-    console.log("Est. Shipping By: " + expecteddate);
 
-    
     let expectedShippingDateElement = document.getElementById('shipping-date-data');
 
     //querySelectorAll detects 3 shipping-date-data, however when looking at the front-end, only 1 appears. The bug is that 3 need to appear on the front-end simulatenously. 
@@ -62,4 +58,3 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Element with ID 'expected-shipping-date' not found.");
     }
 });
-
