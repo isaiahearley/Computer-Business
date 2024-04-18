@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="./JS/displaydate.js"></script>
-
+    <script src="./JS/isSelectedAnimation.js"></script>
 
 
     <title>San Diego Custom Desktops</title>
@@ -262,25 +262,25 @@
                     <div class="stats">
 
                         <div class="power-style">
-                            <h1 class="cube-metrics"><span class="electric-color">302</span> watts</h1>
+                            <h1 class="cube-metrics"><span id="wattage" class="electric-color">302</span> watts</h1>
                             <p class="cube-section-text">Power Efficiency</p>
                         </div>
 
                         <div class="power-style">
-                            <h1 class="cube-metrics"><span class="electric-color">15</span> tflops</h1>
+                            <h1 class="cube-metrics"><span id="tflops" class="electric-color">15</span> tflops</h1>
                             <p class="cube-section-text">Performance</p>
 
                         </div>
 
                         <div class="power-style">
-                            <h1 class="cube-metrics"><span class="electric-color">6</span> cores</h1>
-                            <h1 class="cube-metrics"><span class="electric-color">12</span> threads</h1>
-                            <h1 class="cube-metrics"><span class="electric-color">3.8</span> GHz</h1>
+                            <h1 class="cube-metrics"><span id="cores" class="electric-color">6</span> cores</h1>
+                            <h1 class="cube-metrics"><span id="threads" class="electric-color">12</span> threads</h1>
+                            <h1 class="cube-metrics"><span id="ghz" class="electric-color">3.8</span> GHz</h1>
                             <p class="cube-section-text">Processor Capability</p>
                         </div>
 
                         <div class="power-style">
-                            <h1 class="cube-metrics"><span class="electric-color">16</span> GBs</h1>
+                            <h1 class="cube-metrics"><span id="memory" class="electric-color">16</span> GBs</h1>
                             <p class="cube-section-text">Memory (RAM)</p>
                         </div>
 
@@ -290,15 +290,15 @@
 
                     <div class="stats-machines">
 
-                        <div class="tier-three-stats stats-button">
-                            <h1><span class="stats-arrow is-selected">←</span> Tier 3 </h1>
+                        <div id="tier-three-stats" class="stats-button is-selected">
+                            <h1><span class="stats-arrow">←</span> Tier 3 </h1>
                         </div>
 
-                        <div class="tier-three-stats stats-button">
+                        <div id="tier-two-stats" class="stats-button">
                             <h1><span class="stats-arrow">←</span> Tier 2 </h1>
                         </div>
 
-                        <div class="tier-three-stats stats-button">
+                        <div id="tier-one-stats" class="stats-button">
                             <h1><span class="stats-arrow">←</span> Tier 1</h1>
                         </div>
 
@@ -309,7 +309,7 @@
                 <div class="cube">
 
                     <div class="pricing-style">
-                        <h1 class="cube-metrics">$<span class="electric-color">1169</span></h1>
+                        <h1 class="cube-metrics">$<span id="base-price" class="electric-color">1169</span></h1>
                         <p class="cube-section-text">Starting Cost</p>
                     </div>
                 </div>

@@ -458,6 +458,13 @@ nav ul li a:hover {
     background-color: rgb(129, 206, 74);
 }
 
+.is-selected {
+    transition: 0.3s;
+    border: 1px solid rgb(129, 206, 74);
+    color: rgb(129, 206, 74);
+    padding-left: 10%;
+}
+
 .stats-arrow {
     font-family: Calibri, sans-serif;
     padding-right: 5%;

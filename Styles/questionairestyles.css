@@ -1,0 +1,16 @@
+.questionaire-section {
+    background-color: grey;
+    height: 500vh;
+    padding: 1%;
+}
+
+.questionaire-intro {
+    background-color: rgb(211, 199, 76);
+    margin: 0% 5%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.questionaire-intro p {
+    margin: 1% 0%;
+}

@@ -55,6 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
     if (expectedShippingDateElement != null) {
         expectedShippingDateElement.textContent = expecteddate;
     } else {
-        console.error("Element with ID 'expected-shipping-date' not found.");
+        console.error("Element with ID 'shipping-date-data' not found.");
     }
 });
