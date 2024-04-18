@@ -388,6 +388,7 @@ nav ul li a:hover {
     color: rgb(221, 221, 221);
     border-radius: 4px;
     margin: 0% 25%;
+    font-size: 1vw;
 }
 
 .electric-color {
@@ -418,10 +419,26 @@ nav ul li a:hover {
     background-color: grey;
     padding: 2%;
     border-radius: 15px;
-    margin: 10% 20%;
+    margin: 0% 20%;
     box-shadow: 1px 1px 2px black;
     width: 60%;
     text-align: center;
+}
+
+.pricing-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.affirm-logo {
+    color: rgb(124, 124, 236);
+}
+
+.affirm-qualification-popup{
+    color: rgb(129, 206, 74);
+    text-decoration: underline;
 }
 
 .stats-machines {
@@ -430,6 +447,8 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+
 
 .stats-button {
     background-color: grey;
@@ -465,11 +484,34 @@ nav ul li a:hover {
     padding-left: 10%;
 }
 
+.fade-in {
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+
 .stats-arrow {
     font-family: Calibri, sans-serif;
     padding-right: 5%;
 }
 
+
+.troubleshooting-section {
+    position: relative;
+    height: 150vh;
+    background-color: brown;
+}
 
 /* Footer Stuff */
 

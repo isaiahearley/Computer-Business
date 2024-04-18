@@ -23,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let num = 0
 
+function fadeIn(element) {
+    element.classList.add('fade-in');
+    // Remove the class after the animation ends
+    element.addEventListener('animationend', function() {
+        element.classList.remove('fade-in');
+    }, { once: true });
+}
+
 function printNum(){
     let num = 3;
     console.log("Clicked on Tier " + num);
@@ -40,6 +48,18 @@ function printNum(){
     getTflopsElement.textContent = 15;
     getMemoryElement.textContent = 16;
     getPriceElement.textContent = 1169;
+    getMonthlyPriceElement.textContent = 112;
+
+
+    fadeIn(getWattageElement);
+    fadeIn(getCoreElement);
+    fadeIn(getThreadElement);
+    fadeIn(getGhzElement);
+    fadeIn(getTflopsElement);
+    fadeIn(getMemoryElement);
+    fadeIn(getPriceElement);
+    fadeIn(getMonthlyPriceElement);
+
 }
 
 function printNumTwo(){
@@ -58,6 +78,18 @@ function printNumTwo(){
     getTflopsElement.textContent = 29;
     getMemoryElement.textContent = 32;
     getPriceElement.textContent = 1599;
+    getMonthlyPriceElement.textContent = 153;
+
+
+    fadeIn(getWattageElement);
+    fadeIn(getCoreElement);
+    fadeIn(getThreadElement);
+    fadeIn(getGhzElement);
+    fadeIn(getTflopsElement);
+    fadeIn(getMemoryElement);
+    fadeIn(getPriceElement);
+    fadeIn(getMonthlyPriceElement);
+
 }
 
 function printNumThree(){
@@ -76,6 +108,17 @@ function printNumThree(){
     getTflopsElement.textContent = 40;
     getMemoryElement.textContent = 64;
     getPriceElement.textContent = 2349;
+    getMonthlyPriceElement.textContent = 225;
+
+    fadeIn(getWattageElement);
+    fadeIn(getCoreElement);
+    fadeIn(getThreadElement);
+    fadeIn(getGhzElement);
+    fadeIn(getTflopsElement);
+    fadeIn(getMemoryElement);
+    fadeIn(getPriceElement);
+    fadeIn(getMonthlyPriceElement);
+
 }
 
 
@@ -94,6 +137,7 @@ const getGhzElement = document.getElementById('ghz');
 const getTflopsElement = document.getElementById('tflops');
 const getMemoryElement = document.getElementById('memory');
 const getPriceElement = document.getElementById('base-price');
+const getMonthlyPriceElement = document.getElementById('monthly-price');
 
 });
 
