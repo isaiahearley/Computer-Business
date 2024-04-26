@@ -506,11 +506,35 @@ nav ul li a:hover {
     padding-right: 5%;
 }
 
-
 .troubleshooting-section {
     position: relative;
     height: 150vh;
     background-color: brown;
+    padding: 1%;
+}
+
+.troubleshooting-intro {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin: 1% 30%;
+    padding: 1%;
+    text-align: center;
+}
+
+.troubleshooting-hook {
+    background-color: rgb(225, 103, 103);
+    border-radius: 15px;
+    font-size: 2.5vw;
+    margin: 0% 25%;
+    padding: 1%;
+}
+
+.issues-section {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 1% 2%;
 }
 
 /* Footer Stuff */
