@@ -508,7 +508,7 @@ nav ul li a:hover {
 
 .troubleshooting-section {
     position: relative;
-    height: 150vh;
+    height: 180vh;
     background-color: brown;
     padding: 1%;
 }
@@ -591,6 +591,56 @@ nav ul li a:hover {
     color: black;
     text-wrap: nowrap;
     font-size: 2cap;
+}
+
+.troubleshooting-price {
+    display: flex;
+    flex-direction: row;
+}
+
+.check-in-section {
+    background-color: rgba(168, 168, 168, 0);
+    border-radius: 15px;
+    color: white;
+    padding: 1%;
+
+}
+
+.troubleshooting-header {
+    font-family: "Anton";
+}
+
+.check-in-section p {
+    font-size: 2em;
+}
+
+.troubleshooting-area {
+    padding: 1%;
+    color: white;
+}
+
+.troubleshooting-fee-section {
+    background-color: black;
+    border-radius: 15px;
+    margin: 1% 0%;
+    padding: 2%;
+    font-size: 2em;
+}
+
+.search-nav input[type=text] {
+    padding: 10%;
+    font-size: 2em;
+    width: 200%;
+    
+}
+
+.troubleshooting-purchase-button {
+    background-color: rgb(224, 224, 224);
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 2em;
+    width: 40vh;
+    margin-left: 75%;
 }
 
 /* Footer Stuff */
