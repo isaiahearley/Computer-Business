@@ -817,6 +817,82 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
+/* Cookies Section */
+
+.cookies-section {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    margin: 0% 18% 0% 18%;
+    height: 9vh;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.lower-cookies {
+    margin: 2% 2%;
+}
+
+.cookies-description {
+    width: 60%;
+}
+
+.cookies-description p {
+    margin: 1% 0%;
+    font-size: 0.9em;
+}
+
+.cookies-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-wrap: none;
+    margin-right: 20px;
+    margin-top: 13px;
+}
+
+.cookie-button {
+    border-radius: 5px;
+    padding: 3% 2%;
+    text-wrap: nowrap;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cookie-preferences {
+    border: 1px solid grey;
+}
+
+.cookie-preferences:hover {
+    color: rgb(38, 118, 238);
+    border: 1px solid rgb(38, 118, 238);
+}
+
+.cookie-decline {
+    border: 1px solid grey;
+}
+
+.cookie-decline:hover {
+    color: rgb(38, 118, 238);
+    border: 1px solid rgb(38, 118, 238);
+}
+
+.cookie-accept {
+    color: white;
+    background-color: rgb(83, 146, 241);
+}
+
+.cookie-accept:hover {
+    background-color: rgb(38, 118, 238);
+}
+
+
+
 /* Footer Stuff */
 
 
