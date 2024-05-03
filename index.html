@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./JS/displaydate.js"></script>
     <script src="./JS/isSelectedAnimation.js"></script>
 
@@ -343,18 +344,6 @@
                 <p>We resolve hardware issues for twitch streamers, engineers and anyone in between.</p>
             </div>
 
-            <p>
-                Have issues with your desktop? SDCD picks up machines within San Diego County for a $19 check-in fee. 
-                During this time we can analyze hardware issues that are affecting your PC and consult with you on various solutions.
-                
-                If you'd like us to repair your computer, we charge a base labor fee of $40. If you have more questions email us at 
-                sdcd.computers@gmail.com and we'll get back with you within 24 hours. 
-            </p>
-
-            <p>
-                We also offer small office / home office solutions, assisting you with setting up your PC to your network.  
-            </p>
-
             <div class="issues-section">
                 <ul>
                     <p>Issues we repair:</p>
@@ -362,6 +351,7 @@
                     <li>Display Issues</li>
                     <li>Power Problems</li>
                     <li>Crashing Errors</li>
+                    <li>Machine Slow Downs</li>
                 </ul>
             </div>
 
@@ -381,58 +371,185 @@
                     </p>
 
                     <div class="comptia-button">
-                        <a href="https://www.comptia.org/brand" target="_blank">What is CompTIA?</a>
+                        <a href="https://www.comptia.org/brand" target="_blank">What is CompTIA? <i class="fa fa-external-link"></i></a>
+                        
                     </div>
                 </div>
 
             </div>
 
-
-            <h1>Repair Cost Estimate</h1>
-            <div class="troubleshooting-price">
-
-                
-                <div class="check-in-section">
-                    <h1 class="troubleshooting-header">Check In Fee</h1>
-                    <p>$19</p>
+            <div class="repair-section">
+                <div class="repair-intro">
+                    <h1>Repair Cost Estimator</h1>
+                    <p>
+                        At San Diego Custom Desktops <span class="underline"> we believe that quotes are a thing of the past.</span> If you know the type of 
+                        issue you are having go ahead and find it with our search bar on the right. If the issue isn't listed, you can type other 
+                        and reach out to us on the email listed below.
+                    </p>
                 </div>
+                <div class="troubleshooting-price">
 
-                <div class="troubleshooting-area">
-                    <h1 class="troubleshooting-header">Troubleshooting Costs</h1>
-
-                    <div class="troubleshooting-fees">
+                    
+                    <div class="check-in-section">
+                        <h1 class="troubleshooting-header underline">Check In Fee</h1>
                         <div class="troubleshooting-fee-section">
-                            <p>$20</p>
-                            <p>Soft Issues</p>
-                        </div>
-
-                        <div class="troubleshooting-fee-section">
-                            <p>$40</p>
-                            <p>Intermediate Issues</p>
-                        </div>
-
-                        <div class="troubleshooting-fee-section">
-                            <p>$80</p>
-                            <p>Complex Issues</p>
+                            <p>$19 Base Rate</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="search-nav">
-                    <input type="text" placeholder="Search currently known issue...">
-                </div>
+                    <div class="troubleshooting-area">
+                        <h1 class="troubleshooting-header underline">Troubleshooting Costs</h1>
 
+                        <div class="troubleshooting-fees">
+                            <div class="troubleshooting-fee-section">
+                                <p> $20 Soft Issues</p>
+                            </div>
+
+                            <div class="troubleshooting-fee-section">
+                                <p> $40 Intermediate Issues</p>
+                            </div>
+
+                            <div class="troubleshooting-fee-section">
+                                <p> $80 Complex Issues</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Implement AJAX Search Function that dynamically updates to show estimated cost of a repair-->
+                    <div class="search-nav">
+                        <input type="issues" placeholder="Search currently known issue...">
+
+                        <table cellspacing="0">
+                            <tr>
+                                <th>Issue Type</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Base Rate</td>
+                                <td>Check In Fee</td>
+                                <td>$19</td>
+                            </tr>
+                            <tr>
+                                <td>Intermediate</td>
+                                <td>Overheating</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Total Labor Cost:</td>
+                                <td>$59</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
             </div>
 
             <div class="troubleshooting-purchase-button">
-                <a>Get Troubleshooting</a>
+                <a>Get Started</a>
             </div>
 
-            <div class="issues-area">
+       
 
+        </section>
 
+         <!--If button is clicked initiate script to expand and add elements, otherwise view is hidden by default-->
+         <section class="troubleshooting-signup-section">
+            <div class="cancel-troubleshooting">
+                <p>X</p>
             </div>
 
+            <div class="sign-up-section">
+                <div class="sign-up-header">
+                    <h1>Privacy Policy / Terms & Conditions Form</h1>
+                    <p>
+                        Please read these terms and conditions carefully to understand the scope of issues San Diego Custom Desktops is liable for. 
+                        Once you finish agreeing to the terms, please e-sign and date your name and we will contact you to schedule a time to
+                        pick up your computer.
+                    </p>
+                    <p class="terms-changes">
+                        The terms and conditions are subject to change, and alter your responsibilities as a consumer and the responsibilities 
+                        we maintain as a business. These terms are provided to show the rights you have with our services and to prevent consumers from 
+                        circumventing remedies we provide. 
+                    </p>
+
+                    <h3>Data Privacy Clause</h3>
+                    <p>
+                        1. San Diego Custom Desktops (SDCD) will attempt to work hard at ensuring your data is secure and private during transit and restricts access 
+                        to personal information to only those with a 'need-to-know'. Users who have access to this information outside of our organization and 
+                        without our knowledge will be subject to fines, discipline and or legal prosecution. 
+                    </p>
+                    <div class="indent">
+                        <p> 
+                            i. We will share personal information outside of SDCD based on company morals and if absolutely necessary to applicable law, legal processes 
+                            and, or enforceable governmental request. 
+                        </p>
+                    </div>
+                    <p>
+                        2. We will not sell or transmit your personal information to 3rd party data brokers, data aggregators or data intermediaries. You have the right to 
+                        refuse specific PII including but not limited to your home address, phone number, email address, or first and last name, however this may result in 
+                        lower quality service provided by SDCD.
+                    </p>
+                    
+                    <h3>Consumer Rights</h3>
+                    <p>
+                        1. You are entitled to a 30-day labor guarantee which can be used to cover 100% of the future costs we charge in labor in the event that a reoccuring 
+                        issue occurs with a computer that is brought in.
+                    </p>
+                    <div class="indent">
+                        <p> 
+                            i. SDCD's definition of a reoccuring issue is an issue that was documented and described before and after a repair with the same issue occuring after a repair.
+                        </p>
+                        <p> 
+                            ii. You, as the consumer will be responsible for shipping costs going to and from San Diego Custom Desktops address for custom built desktops. 
+                        </p>
+                    </div>
+
+                    <h3>Business Policies</h3>
+                    <p>
+                        1. San Diego Custom Desktops reserves the right to refuse service to anyone for the following reasons: disruptive behavior, lack of hygiene and or 
+                        cleanliness, threats, harassing employees, intoxication, safety concerns, and or protecting user privacy. 
+                    </p>
+                    <p>
+                        2. SDCD can refuse refunds at anytime if we suspect potential fraud, abuse or misuse of purchased products.
+                    </p>
+                    <div class="indent">
+                        <p> 
+                            i. Abuse may include intentional and unintentional tampering with the machine within the 30-day purchasing period, or overclocking; in other
+                            words using a system at clock speeds that are higher than intended by manufacturers.
+                        </p>
+                        <p>
+                            ii. SDCD has the right to refuse 1-year labor warranties for custom built desktops with the same policy.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <label class="consent-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>
+                                (Optional) I, <span class="underline">Isaiah Earley</span> consent to potential marketing updates, offering coupons, sales or deals SDCD may provide.
+                            </p>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="consent-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>
+                                I, <span class="underline">Isaiah Earley</span> consent to the terms and conditions listed above and adhere to the risks and responsibilities that I as a consumer have when
+                                providing personal data and having my electronic devices repaired by San Diego Custom Desktops.
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="consent-submit-button">
+                        <p>Submit</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -480,6 +597,7 @@
             </div>
 
         </div>
+    
 
         <div class="social-media">
             <p>Follow SDCD</p>
@@ -507,5 +625,8 @@
 
 
 </body>
+<script src="./JS/troubleshootingpage.js"></script>
+<script src="./JS/termsandconditions.js"></script>
+
 
 </html>
