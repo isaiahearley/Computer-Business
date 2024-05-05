@@ -6,7 +6,7 @@
 }
 /* rgb(114, 156, 90); */
 body {
-    background-color: rgb(114, 156, 90);;
+    background-color: rgb(114, 156, 90);
 }
 
 main { 
@@ -15,6 +15,10 @@ main {
 
 .bold {
     font-weight: bold;
+}
+
+.hidden {
+    display: none;
 }
 
 .timeframe {
@@ -657,9 +661,12 @@ nav ul li a:hover {
 .search-nav input[type=issues] {
     padding: 1.5%;
     font-size: 1.5vw;
-    width: 90%;    
-    border-radius: 5px;
+    width: 85%;    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
+
+
 
 .search-nav table {
     width: 93%;
@@ -823,8 +830,8 @@ nav ul li a:hover {
     position: fixed;
     bottom: 0;
     z-index: 5;
-    margin: 0% 18% 0% 18%;
-    height: 9vh;
+    margin: 0% 15% 0% 15%;
+    height: 10vh;
     background-color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -888,9 +895,88 @@ nav ul li a:hover {
 }
 
 .cookie-accept:hover {
-    background-color: rgb(38, 118, 238);
+    background-color: rgb(38, 118, 238);x
 }
 
+
+.cookies-manage {
+    position: fixed;
+    z-index: 20;
+    width: 68%;
+    height: 50vh;
+    margin: 15% 15%;
+    bottom: 0;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1%;
+    backdrop-filter: blur(5px);
+}
+
+.cookies-manage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cookies-manage-header h3 {
+    margin: 5px 0px;
+}
+
+.close-cookies-button {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 13px 19px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-cookies-button:hover {
+    background-color: grey;
+    transition: 0.3s;
+}
+
+.cookies-list {
+    margin: 1% 0%;
+    border-top: 1px solid black;
+}
+
+.cookies {
+    padding: 15px 0%;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.cookies:hover {
+    background-color: rgb(123, 123, 123);
+    color: white;
+    transition: 0.3s;
+}
+
+.cookies-manage-accept {
+    padding: 10px 2%;
+    margin-top: 3%;
+    background-color: rgb(69, 161, 243);
+    color: white;
+    border-radius: 10px;
+    width: 16vh;
+    margin-left: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cookies-manage-accept:hover {
+    background-color: rgb(23, 139, 240);
+    transition: 0.3s;
+}
+
+.cookies-section-intro {
+    display: flex;
+    gap: 5px;
+}
 
 
 /* Footer Stuff */

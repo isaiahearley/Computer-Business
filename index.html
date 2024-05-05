@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -417,7 +417,11 @@
 
                     <!-- Implement AJAX Search Function that dynamically updates to show estimated cost of a repair-->
                     <div class="search-nav">
-                        <input type="issues" placeholder="Search currently known issue...">
+
+                        <form class="search-bar">
+                            <input type="issues" placeholder="Search currently known issue...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
 
                         <table cellspacing="0">
                             <tr>
@@ -553,6 +557,59 @@
         </section>
 
         <!--Cookies Section-->
+        
+        <div class="cookies-manage hidden">
+
+            <div class="cookies-manage-header">
+                <h3>Cookies Preferences</h3>
+                <div class="close-cookies-button">
+                    <p>x</p>
+                </div>
+            </div>
+            
+            <div class="cookies-list">
+                
+                <div class="cookies">
+                    <div class="cookies-section-intro">
+                        <p> + </p>
+                        <p>Strictly Necessary</p>
+                    </div>
+                    
+                    <p>Always Active</p>
+                </div>
+
+                <div class="cookies">
+                    <div class="cookies-section-intro">
+                        <p> + </p>
+                        <p>Functional</p>
+                    </div>
+
+                </div>
+
+                <div class="cookies">
+                    <div class="cookies-section-intro">
+                        <p> + </p>
+                        <p>Performance</p>
+                    </div>
+
+                </div>
+
+                <div class="cookies">
+                    <div class="cookies-section-intro">
+                        <p> + </p>
+                        <p>Marketing</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cookies-manage-accept">
+                <p>Accept Changes</p>
+            </div>
+
+        </div>
+
         <div class="cookies-section">
             
             <div class="cookies-description">
@@ -657,6 +714,8 @@
 </body>
 <script src="./JS/troubleshootingpage.js"></script>
 <script src="./JS/termsandconditions.js"></script>
+<script src="./JS/cookies.js"></script>
+
 
 
 </html>
