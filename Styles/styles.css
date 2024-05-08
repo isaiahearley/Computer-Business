@@ -7,6 +7,7 @@
 /* rgb(114, 156, 90); */
 body {
     background-color: rgb(114, 156, 90);
+    overflow-x: hidden;
 }
 
 main { 
@@ -895,7 +896,7 @@ nav ul li a:hover {
 }
 
 .cookie-accept:hover {
-    background-color: rgb(38, 118, 238);x
+    background-color: rgb(38, 118, 238);
 }
 
 
@@ -916,6 +917,18 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.cookies-dark-overlay { 
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 19;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .cookies-manage-header h3 {
@@ -966,6 +979,7 @@ nav ul li a:hover {
     margin-left: auto;
     transition: 0.3s;
     cursor: pointer;
+    text-align: center;
 }
 
 .cookies-manage-accept:hover {
