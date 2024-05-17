@@ -208,9 +208,9 @@ img {
   }
 
 .configuration-checklist {
-    height: 10vh;
-    width: 50%;
-    margin-left: 47%;
+    height: 12vh;
+    width: 95%;
+    margin-left: 2%;
     backdrop-filter: blur(5px);
     background-color: rgba(252, 252, 252, 0.219);
     border: 3px solid rgb(0, 0, 0);
@@ -267,6 +267,7 @@ img {
 .total-price {
     margin-top: 2%;
     margin-right: auto;
+    width: 40%;
     margin-left: 2%;
     background-color: rgb(109, 194, 109);
     padding: 1% 1% 0%;
@@ -353,6 +354,8 @@ img {
 }
 
 .expand-fontsize {
-    font-size: 1.5vw;
+    font-size: 1.2em;
+    margin: 1% 0%;
+    text-align: center;
 }
 
