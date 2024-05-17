@@ -46,15 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Your code to set expecteddate and update the element
     let expecteddate = `${months[month]} ${day}, ${year}`;
 
-    let expectedShippingDateElement = document.getElementById('shipping-date-data');
+  let expectedShippingDateElements = document.querySelectorAll('.shipping-date-data');
 
-    //querySelectorAll detects 3 shipping-date-data, however when looking at the front-end, only 1 appears. The bug is that 3 need to appear on the front-end simulatenously. 
-    //let countDateElement = document.querySelectorAll('#shipping-date-data')
-    //console.log("Number of elements with ID: " + countDateElement.length)
-
-    if (expectedShippingDateElement != null) {
-        expectedShippingDateElement.textContent = expecteddate;
+    if (expectedShippingDateElements.length > 0) {
+        expectedShippingDateElements.forEach(element => {
+            element.textContent = expecteddate;
+        });
     } else {
-        console.error("Element with ID 'shipping-date-data' not found.");
+        console.error("No elements with class 'shipping-date-data' found.");
     }
 });

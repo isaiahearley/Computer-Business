@@ -60,8 +60,8 @@ main {
     padding: 1% 40px;
     border-radius: 15px;
     backdrop-filter: blur(3px);
-    margin: 20px 10px;
     transition: 0.15s;
+    justify-content: space-between;
 }
 
 .nav-section:hover {
@@ -112,7 +112,7 @@ nav ul li a:hover {
 .main-hero-video {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: rgb(27, 27, 27);
     object-fit: cover;
     filter:brightness(0.5)
@@ -166,6 +166,7 @@ nav ul li a:hover {
     font-size: 2em;
     z-index: 1;
     height: 100%;
+    width: 100%;
     padding: 1%;
     background-color: rgb(88, 88, 88);
     color: rgb(226, 226, 226);
@@ -200,7 +201,11 @@ nav ul li a:hover {
     .company-container {
         margin: 0% 10% 10% 5%;
     }
-
+    .nav-section {
+        flex-direction: column;
+        text-align: center;
+        margin: 0% 15%;
+    }
     .catch-slogan {
         font-size: 1em;
     }
@@ -233,6 +238,19 @@ nav ul li a:hover {
         text-align: left;
         margin: 3% 5%;
         padding: 3% 2%;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .nav-section {
+        flex-direction: row;
+        margin: 20px 10px;
+    }
+    .card {
+        text-align: start;
+    }
+    nav {
+        text-align: end;
     }
 }
 
@@ -271,7 +289,7 @@ nav ul li a:hover {
     .timeframe {
         background-color: rgb(114, 156, 90);
         border-radius: 15px;
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         text-align: left;
         margin: 3% 5%;
         padding: 3% 2%;
@@ -897,6 +915,7 @@ nav ul li a:hover {
 @media screen and (min-width: 200px) {
     .cookies-section {
         margin: 0% 2% 0% 2%;
+        padding: 2% 2% 5% 2%;
         flex-direction: column; 
     }
 
@@ -908,22 +927,19 @@ nav ul li a:hover {
         gap: 15px;
     }
     .cookie-button {
-        padding: 2% 1%;
+        padding: 20px 10px;
     }
 }
 
 @media screen and (min-width: 750px) {
     .cookies-section {
         margin: 0% 4% 0% 5%;
+        padding: 2%;
         flex-direction: row;
+        gap: 5px;
     }
     .lower-cookies {
         width: 100%;
-    }
-    .cookies-buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 3%;
     }
     .cookies-description {
         width: 90%;
@@ -935,11 +951,25 @@ nav ul li a:hover {
     }
 }
 
+@media screen and (min-width: 900px) {
+    .cookies-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 @media screen and (min-width: 1140px) {
 
     .cookies-section {
-        margin: 0% 20% 0% 10%;
+        margin: 0% 5% 0% 5%;
+        padding: 2%;
         flex-direction: row;
+    }
+    .cookies-buttons {
+        text-align: end;
+        flex-direction: row;
+
     }
 }
 
@@ -957,7 +987,6 @@ nav ul li a:hover {
     background-color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    padding: 2%;
     display: flex;
 }
 
