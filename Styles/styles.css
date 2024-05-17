@@ -430,7 +430,7 @@ nav ul li a:hover {
 
 .cubes h2 {
     font-family: "Anton", sans-serif;
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 .cubes h3 {
@@ -823,27 +823,26 @@ nav ul li a:hover {
 }
 
 .cancel-troubleshooting {
-    padding: 1.5%;
+    padding: 25px;
     background-color: rgba(0, 0, 0, 0.178);
     color: rgb(0, 0, 0);
     font-size: 1em;
-    width: 13px;
-    height: 14px;
+    height: 10px;
     border-radius: 100px;
     font-family: "Anton";
-    margin-left: 96%;
-    margin-top: 0.5%;
+    margin: 0.5% 4%;
+    width: 90%;
+    text-align: center;
+    transition: 0.3s;
+
 }
 
 .cancel-troubleshooting:hover {
-    padding: 1.5%;
     background-color: rgb(63, 63, 63);
     color: white;
-    width: 13px;
-    height: 14px;
     border-radius: 100px;
     font-family: "Anton";
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .sign-up-section {
@@ -862,10 +861,6 @@ nav ul li a:hover {
     margin: 1% 0%;
 }
 
-.sign-up-header {
-    margin: 1% 34%;
-    width: 40%;
-}
 
 .sign-up-header h3 {
     color: rgb(52, 186, 248);
@@ -965,6 +960,9 @@ nav ul li a:hover {
     .repair-intro {
         width: 95%;
     }
+    .sign-up-header {
+        margin: 1% 5%;
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -1018,6 +1016,10 @@ nav ul li a:hover {
     }
     .troubleshooting-area {
         width: 30%;
+    }
+    .sign-up-header {
+        margin: 1% 20%;
+        width: 70%;
     }
     
 }
