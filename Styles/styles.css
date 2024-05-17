@@ -57,7 +57,6 @@ main {
     display: flex;
     right: 0;
     color: white;
-    padding: 1% 40px;
     border-radius: 15px;
     backdrop-filter: blur(3px);
     transition: 0.15s;
@@ -205,6 +204,8 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         margin: 1% 0%;
+        padding: 0%;
+
     }
     .catch-slogan {
         font-size: 0.8em;
@@ -230,8 +231,8 @@ nav ul li a:hover {
     }
     .pc-section {
         flex-direction: column;
-        width: 90%;
-        margin: 0% 5%;
+        width: 97%;
+        margin: 0%;
     }
     .timeframe {
         background-color: rgb(114, 156, 90);
@@ -247,6 +248,7 @@ nav ul li a:hover {
     .nav-section {
         flex-direction: row;
         margin: 20px 10px;
+        padding: 1% 40px;
     }
     .card {
         text-align: start;
@@ -435,7 +437,7 @@ nav ul li a:hover {
 
 .cubes h3 {
     font-family: "Anton", sans-serif;
-    font-size: 1.6vw;
+    font-size: 0.9em;
     margin: 0% 3%;
 }
 
@@ -827,11 +829,10 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.178);
     color: rgb(0, 0, 0);
     font-size: 1em;
-    height: 10px;
+    height: 5px;
     border-radius: 100px;
     font-family: "Anton";
-    margin: 0.5% 4%;
-    width: 90%;
+    margin: 1% 19%;
     text-align: center;
     transition: 0.3s;
 
@@ -892,7 +893,6 @@ nav ul li a:hover {
     color: black;
     border-radius: 40px;
     padding: 1% 2%;
-    margin: 0% 0% 0% 80%;
     font-size: 1.2em;
     width: 10vh;
     text-align: center;
@@ -963,6 +963,10 @@ nav ul li a:hover {
     .sign-up-header {
         margin: 1% 5%;
     }
+    .cancel-troubleshooting {
+        margin: 1% 3%;
+        width: 85%;
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -1019,6 +1023,10 @@ nav ul li a:hover {
     }
     .sign-up-header {
         margin: 1% 20%;
+        width: 70%;
+    }
+    .cancel-troubleshooting {
+        margin: 1% 19%;
         width: 70%;
     }
     
