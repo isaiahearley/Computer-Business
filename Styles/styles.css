@@ -437,8 +437,8 @@ nav ul li a:hover {
 
 .cubes h3 {
     font-family: "Anton", sans-serif;
-    font-size: 0.9em;
-    margin: 0% 3%;
+    font-size: 1.5em;
+    margin: 0% 1%;
 }
 
 .cube-text-section {
@@ -751,14 +751,12 @@ nav ul li a:hover {
 }
 
 .search-nav input[type=issues] {
-    padding: 1.5%;
-    font-size: 1.5vw;
-    width: 85%;    
+    padding: 12px;
+    font-size: 1.5em;
+    width: 80%;    
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-
-
 
 .search-nav table {
     width: 93%;
@@ -766,19 +764,16 @@ nav ul li a:hover {
     margin: 1% 0%;
 }
 
-.search-nav table td {
-    border: 1px solid black;
-}
 
 .search-nav th {
     padding: 1%;
-    font-family: 'Courier New', Courier, monospace;
-    border: 1px solid black;
-    font-size: 1.2vw;
+    font-family: Courier, monospace;
+    font-size: 1em;
 }
 
 .search-nav td {
     padding: 1%;
+    font-size: 0.9em
 }
 
 .troubleshooting-purchase-button {
@@ -962,6 +957,7 @@ nav ul li a:hover {
     }
     .sign-up-header {
         margin: 1% 5%;
+        padding: 0% 0% 8% 0%;
     }
     .cancel-troubleshooting {
         margin: 1% 3%;
@@ -1024,6 +1020,7 @@ nav ul li a:hover {
     .sign-up-header {
         margin: 1% 20%;
         width: 70%;
+        padding: 0% 0% 4% 0%;
     }
     .cancel-troubleshooting {
         margin: 1% 19%;
